@@ -13,6 +13,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .header h1 {
@@ -57,6 +59,8 @@ p {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .float-left {
@@ -76,7 +80,7 @@ p {
 }
 
 .benefits {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 20px;
     clear: both;
     float: right;
@@ -84,11 +88,14 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
+    
 }
 
 .benefit-brand {
@@ -104,6 +111,8 @@ p {
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .benefit-brand h3 {
@@ -137,28 +146,34 @@ p {
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    flex-wrap: wrap;
+    display:flex;
 }
 
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    flex-wrap: wrap;
+    display:flex;
 }
 
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    /* height: 300px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .search-engine-optimization img {
@@ -178,14 +193,18 @@ p {
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
+.online-reputation-management h3 {
     margin-bottom: 20px;
     font-size: 36px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.social-media-marketing h2 {
+.social-media-marketing h3 {
     margin-bottom: 20px;
     font-size: 36px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -197,4 +216,11 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    main,
+    nav{
+        flex-direction: column;
+    }
 }
